@@ -1,0 +1,86 @@
+:root {
+    background:hsl(217, 28%, 15%);
+}
+
+* {
+    max-width: 1244px;
+    text-align: center;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-weight: 400, 700;
+    border: none;
+    margin: 0;
+}
+
+body {
+    
+
+}
+
+header {
+    background-color: hsl(217, 28%, 15%);
+    margin: 40;
+    padding: 40;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100;
+    height: 150px;
+    align-items: center;
+} 
+
+header a {
+    text-decoration: none;
+}
+
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font: 14px solid Raleway, sans-serif;
+}
+
+header nav ul li a {
+    padding: 5px 30px;
+    font-size: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+p {
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    outline: none;
+}
+
+#getStr {
+    background-color: hsl(176, 68%, 64%);
+    padding: 14px 60px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    font: 14px bold, Raleway, sans-serif;
+    border-radius: 60px;
+}
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    height: 200px;
+    align-items: center;
+}
+
+.attribution { 
+    font-size: 11px; text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.attribution a { color: hsl(228, 45%, 44%);
+}
