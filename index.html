@@ -9,7 +9,7 @@
     
     <link rel="stylesheet" type="text/css" href="./assets/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">;
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--Navigation and Header-->
@@ -32,22 +32,78 @@
         </nav>
     </header>
     <!--Top section image and text-->
-    <section>
-        <img src="./assets/images/illustration-intro.png" alt="">
-        <div id="features">
-            <h1>All your files in one secure location,</h1>
-            <h1>accessable anywhere.</h1>
-            <p>
-                Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.
-            </p>
+    <section id="bgImage">
+        <div class="sectionOne">
+            <div><img src="./assets/images/illustration-intro.png" alt=""></div>
+            <div>
+                <h2>All your files in one secure location,</h2>
+                <h2>accessable anywhere.</h2>
+                <p id="sectionOneP">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+            </div>
+            <button type="button" id="getStr">Get Started</button>
         </div>
-        <button type="button" id="getStr">Get Started</button>
     </section>
-    <section>
+    <!--Features-->
+    <section id="features" class="sectionTwo">
+        <div class="grid-container">
+            <div class="grid-item">
+                <p><img src="./assets/images/icon-access-anywhere.svg" alt="access anywhere"></p>
+                <h1>Access your files, anywhere</h1>
+                <p>The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.</p>
+            </div>
+            <div class="grid-item">
+                <p><img src="./assets/images/icon-security.svg" alt="security"></p>
+                <h1>Security you can trust</h1>
+                <p>2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.</p>
+            </div>
+            <div class="grid-item">
+                <p><img src="./assets/images/icon-collaboration.svg" alt="collaboration"></p>
+                <h1>Real-time collaboration</h1>
+                <p>Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+            </div>
+            <div class="grid-item">
+                <p><img src="./assets/images/icon-any-file.svg" alt="store any type of file"></p>
+                <h1>Store any type of file</h1>
+                <p>Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all file types to be securely stored and shared.</p>
+            </div>
+        </div>
+    </section>
+    <section class="sectionThree">
         <div>
-
+            <img src="./assets/images/illustration-stay-productive.png" alt="stay productive">
+        </div>
+        <div class="sectionThreeText">
+            <h2>Stay productive,</h2>
+            <h2> wherever you are</h2>
+            <p class="sectionThreeP">Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.</p>
+            <p class="sectionThreeP">Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.</p>
+            <p class="sectionThreeP">See how Fylo works <img src="./assets/images/icon-arrow.svg" alt=""></p>
         </div>
     </section>
+    <!--Team Section-->
+    <section id="team" class="sectionFour">
+        <div class="sectionFour-grid" id="quotes">
+            <div class="sectionFour-gridItem">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <img class="profile-images" src="./assets/images/profile-1.jpg" alt="profile pic 1">
+                <p class="profile-names">Satish Patel</p>
+                <p class="profile-job">Founder & CEO, Huddle</p>
+            </div>
+            <div class="sectionFour-gridItem">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <img class="profile-images" src="./assets/images/profile-2.jpg" alt="profile pic 2">
+                <p class="profile-names">Bruce McKenzie</p>
+                <p class="profile-job">Founder & CEO, Huddle</p>
+            </div>
+            <div class="sectionFour-gridItem">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
+                <img class="profile-images" src="./assets/images/profile-3.jpg" alt="profile pic 3">
+                <p class="profile-names">Iva Boyd</p>
+                <p class="profile-job">Founder & CEO, Huddle</p>
+            </div>
+        </div>
+    </section>
+    
 
 
     <!--Footer section-->
