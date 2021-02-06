@@ -189,6 +189,7 @@ h1 {
 #blueWorks:hover {
     color: white;
     border-color: white;
+    filter: saturate(0) brightness(1.2);
 }
 
 
