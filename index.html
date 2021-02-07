@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ae4e246639.js" crossorigin="anonymous"></script>
 </head>
 
@@ -123,13 +125,17 @@
     </section>
     <section id="signin" class="emailSection">
         <div id="formDiv">
-            <form action="" method="POST">
+            <form action="" method="POST" novalidate>
                 <h2>Get early access today</h2>
-                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any
-                    questions, our support team would be happy to help you.</p>
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="email@example.com">
-                <input type="submit" id="submitbtn" value="Get Started For Free">
+                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                <div>
+                    <label for="email">
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required >
+                        <span class="error" aria-live="polite"></span>
+                    </label>
+                    <input type="submit" id="submitbtn" value="Get Started For Free">
+                    <!--<button type="submit" id="submitbtn" value="">Get Started For Free</button>-->
+                </div>
             </form>
         </div>
     </section>
@@ -181,6 +187,8 @@
             Coded by <a href="#">Paul Carter</a>.
         </p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

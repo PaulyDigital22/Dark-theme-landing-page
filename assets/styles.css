@@ -71,9 +71,9 @@ header a:hover {
     padding-bottom: 130px;
 }
 
-section h2 {
+.sectionOne h2 {
     color: white;
-    font:bold 45px Raleway, sans-serif;
+    font:bold 40px Raleway, sans-serif;
     padding: 10px;
 }
 
@@ -168,6 +168,12 @@ h1 {
     margin: 0 auto;
 }
 
+.sectionThree h2 {
+    color: white;
+    font:bold 30px Raleway, sans-serif;
+    padding: 5px 10px;
+}
+
 .sectionThreeText {
     padding-left: 50px;
 }
@@ -245,6 +251,7 @@ h1 {
 
 .sectionFour-gridItem p {
     padding: 10px 30px 0px;
+    line-height: 22px;
 }
 
 .profile-images {
@@ -254,21 +261,21 @@ h1 {
     width: 25px;
     padding: 10px 0;
     margin: 10px 0;
-    top: 11px;
+    bottom: 0px;
     left: 30px;
 }
 
 .profile-names {
     position: relative;
-    bottom: 50px;
-    left: 40px;
+    bottom: 67px;
+    left: 35px;
     font: bold 10px "open sans",serif;
 }
 
 .profile-job {
     position: relative;
-    bottom: 55px;
-    left: 40px;
+    bottom: 83px;
+    left: 34px;
     font: 8px "open sans", sans-serif;
 }
 
@@ -298,18 +305,27 @@ h1 {
     outline: none;
 }
 
+
+#email:invalid {
+    color: black;
+}
+
 #formDiv {
     z-index: 2;
     margin: 0 auto;
     position: relative;
     bottom: -100px;
     left: 0%;
-    width: 55%;
-    height: 200px;
+    width: 860px;
+    height: 275px;
     border-radius: 10px;
     background: hsl(217, 28%, 15%);
     box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2); 
-    padding: 35px 40px;
+}
+
+#formDiv h2 {
+    padding: 40px 0 10px;
+    font-size: 30px;
 }
 
 #submitbtn {
@@ -334,6 +350,7 @@ h1 {
 }
 
 .emailSection p {
+    line-height: 22px;
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 35px;
@@ -342,11 +359,29 @@ h1 {
     text-align: center;
 }
 
+.emailSection:valid {
+    background: white;
+    color: black;
+}
+
+.error {
+    width: 100%;
+    padding: 0;
+    font-size: 8px;
+    font-weight: bold;
+    color: hsl(0, 100%, 63%);
+    position: absolute;
+    bottom: 25px;
+    right: 270px;
+    box-sizing: border-box;
+}
+
 
 
 /* Footer and attribution */
 
 footer {
+    display: block;
     position: relative;
     background-color: hsl(216, 53%, 9%);
     height: 200px;
@@ -389,12 +424,13 @@ footer {
     padding: 0 100px;
     position: relative;
     right: 25px;
-    bottom: 75px;
+    bottom: 90px;
 }
 
 #footerContact p {
     width: 170px;
     margin-left: 25px;
+    line-height: 15px;
 }
 
 #footerContact img {
@@ -407,7 +443,7 @@ footer {
     display: inline-block;
     text-align: left;
     position: relative;
-    top: 25px;
+    top: 35px;
     left: 0px;
     height: 150px;
     width: 150px;
@@ -433,13 +469,13 @@ footer {
 #navRightSide {
     position: relative;
     left: 130px;
-    bottom: 145px;
+    bottom: 164px;
 }
 
 #footerSocial {
     display: inline-block;
     position: relative;
-    bottom: 100px;
+    bottom: 115px;
     left: 150px;
 }
 
