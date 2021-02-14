@@ -11,6 +11,7 @@
 }
 
 body {
+    min-width: 975px;
     margin: 0 auto;
     text-align: center;
     align-content: center;
@@ -25,6 +26,7 @@ header {
     background-color: hsl(217, 28%, 15%);
     color: hsl(0, 0%, 80%);
     margin: 40px;
+    padding: 0 50px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -98,17 +100,21 @@ header a:hover {
     height: 48px;
     width: 225px;
     text-align: center;
-    text-decoration: none;
     border: none;
     outline: none;
     font: 14px bold, Raleway, sans-serif;
     border-radius: 60px;
     color: white;
     display: inline;
+    cursor: pointer;
 }
 
 #getStr:hover {
     background: hsl(176, 68%, 64%);
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
 }
 
 #bgImage {
@@ -135,7 +141,6 @@ h1 {
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     padding: 30px;
-    align-items: stretch;
     height: 500px;
     width: 900px;
 }
@@ -147,7 +152,7 @@ h1 {
     align-content: center;
     height: 250px;
     width: 370px;
-    padding: 10px 40px;
+    padding: 50px 80px;
     
 }
 
@@ -163,7 +168,7 @@ h1 {
     flex-wrap:  nowrap;
     text-align: left;
     align-items: center;
-    padding: 50px;
+    padding: 200px 100px;
     padding-bottom: 75px;
     margin: 0 auto;
 }
@@ -246,7 +251,7 @@ h1 {
     height: 200px;
     padding: 30px 0px 70px;
     height: 100px; 
-    box-shadow: 0px 1px 10px 0px rgba(219, 219, 219, 0.01), 6px 10px 10px 0px rgba(219, 219, 219, 0.01),  10px 2px 1px 1px rgba(219, 219, 219, 0.01);  
+    box-shadow: 1px 1px 10px 2px rgba(219, 219, 219, 0.01), 6px 10px 10px 2px rgba(219, 219, 219, 0.01),  10px 2px 1px 1px rgba(219, 219, 219, 0.01);  
 }
 
 .sectionFour-gridItem p {
@@ -382,6 +387,7 @@ h1 {
 
 footer {
     display: block;
+    flex-wrap: wrap;
     position: relative;
     background-color: hsl(216, 53%, 9%);
     height: 200px;
@@ -515,4 +521,149 @@ footer {
 }
 
 .attribution a { color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+
+    * {
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    body {
+        max-width: 375px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    header {
+        width: 375px;
+        margin: 0 auto;
+        float: left;
+        padding: 0;
+        display: inline;
+    }
+
+    header img {
+        float: left;
+        position: relative;
+        width: 80px;
+        height: 25px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    header a {
+        display: inline;
+        padding: 0;
+        margin: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        font: 12px raleway, sans-serif;
+        color: white;
+        padding-left: 35px;
+    }
+    
+    header nav ul li a {
+        padding: 25px 12px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .sectionOne {
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .sectionOne div {
+        padding: 0 10px;
+    }
+
+    .sectionOne img {
+        width: 80%;
+    }
+
+    .sectionOne h2 {
+        padding: 0;
+        font-size: 24px;
+        font-weight: 700;
+        display: inline;
+    }
+
+    #sectionOneP {
+        text-align: center;
+        width: 375px;
+        display: flex;
+        padding: 20px 0px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        padding: 0;
+    }
+
+    #getStr {
+        background-image: linear-gradient(hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+        padding: 15px 70px;
+        height: 48px;
+        width: 240px;
+    }
+
+    .grid-container {
+        justify-self: center;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        padding: 100px 0px;
+        padding-top: 100px;
+        width: 375px;
+        display: inline-block;
+    }
+
+    .grid-item {
+        display: block;
+        justify-content: center;
+        align-content: center;
+        padding: 5px 10px;
+        margin: 0 auto;
+        width: 85%;
+        line-height: 20px;
+    }
+
+    .grid-item h1 {
+        font-size: 18px;
+    }
+
+    .grid-item img {
+        width: 20%;
+    }
+
+    .sectionThree {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sectionThree>div>img {
+        width: 85%;
+        padding: 150px 30px 10px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+
 }
